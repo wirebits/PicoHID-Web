@@ -1,0 +1,31 @@
+<!-- HTML File for PicoHIDWeb-->
+<!-- Author - WireBits-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>PicoHIDWeb</title>
+</head>
+<body>
+    <div class="container">
+        <div class="title">PicoHIDWeb</div>
+        <div class="textareas-container">
+            <textarea id="mnemonicsArea" class="textarea" placeholder="Enter Mnemonics"></textarea>
+            <textarea id="picoArea" class="textarea" placeholder="Your Pico Script"></textarea>
+        </div>
+        <div class="buttons">
+            <button class="convert" onclick="convertMnemonics()">Convert</button>
+            <button class="copy" onclick="copyPicoArea()">Copy</button>
+            <button class="reset" onclick="resetTextArea()">Reset</button>
+			<button class="save" onclick="saveFile()">Save</button>
+			<button class="from" onclick="triggerFileInput()">From</button>
+            <input type="file" id="fileInput" onchange="handleFileSelect(event)">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
