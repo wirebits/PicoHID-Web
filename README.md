@@ -67,6 +67,7 @@ The mnemoics used in this tool is heavily inspired by <a href="https://github.co
 | END      | It used to close the LOOP body.                                                                                                                                                               | Just type END                      |
 | INF      | It run commands infinitely.                                                                                                                                                                   | INF<br>TYPE Hello World!<br>EXIT   |
 | EXIT     | It used to close the INF body.                                                                                                                                                                | Just type EXIT                     |
+| CMT     | It used to add comments in the code.                                                                                                                                                                | CMT This is a test script                     |
 
 # Supported Symbols
 1. `-` is used to add `\n` at the end of the text.
