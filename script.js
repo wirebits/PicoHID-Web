@@ -148,6 +148,10 @@ function convertMnemonics() {
                 return `time.sleep(${delayTime / 1000})`;
             });
 
+        if (line.startsWith('CMT ')) {
+            return '# ' + line.substring(4);
+        }
+
         var keys = convertedLine.split(' ');
         var keySequence = keys.map(key => hidKeys[key]).filter(key => key !== undefined);
         var formattedSequence = keySequence.join(', ');
