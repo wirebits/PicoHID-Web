@@ -10,6 +10,10 @@ A Web tool that generates CircuitPython HID scripts from mnemonics for Raspberry
 - Save Button - Save circuit python codes on the system for future use.
 - From Button - Upload `.txt` files which contain mnemonics to run.
 
+# Demo Video
+
+https://github.com/user-attachments/assets/dd3bd953-98c4-4e23-bbd3-6c9b38254989
+
 # OS Support
 - Windows 10
 - Windows 11
