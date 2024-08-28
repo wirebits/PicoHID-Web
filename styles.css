@@ -44,6 +44,7 @@ body {
     background: #000000;
     font-family: "Courier New", Courier, monospace;
     box-sizing: border-box;
+    overflow-x: auto;
     overflow-y: auto;
 }
 button {
