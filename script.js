@@ -175,14 +175,20 @@ function copyPicoArea() {
 function resetTextArea() {
     document.getElementById("mnemonicsArea").value = '';
     document.getElementById("picoArea").value = '';
+	document.getElementById("fileNameInput").value = '';
 }
 
 function saveFile() {
     var content = document.getElementById("picoArea").value;
+    var fileName = document.getElementById("fileNameInput").value;
+    if (fileName.trim() === "") {
+        fileName = "code";
+    }
+    fileName += ".py";
     var blob = new Blob([content], { type: "text/plain;charset=utf-8" });
     var link = document.createElement("a");
     link.href = URL.createObjectURL(blob);
-    link.download = "code.py";
+    link.download = fileName;
     link.click();
 }
 
