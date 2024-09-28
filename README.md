@@ -1,5 +1,5 @@
 # PicoHID-Web
-A Web tool that generates CircuitPython HID scripts from mnemonics for Raspberry Pi Pico Series.
+A web tool that generates Circuit Python HID scripts for Raspberry Pi Pico using Mnemonics.
 
 # Key Features
 - Simple and clean GUI.
@@ -7,12 +7,13 @@ A Web tool that generates CircuitPython HID scripts from mnemonics for Raspberry
 - Convert Button - Convert mnemonics to circuit python.
 - Copy Button - Copy circuit python code to the clipboard so that it can paste anywhere.
 - Reset Button - Clear all text from both windows.
+- File Name Input Field - Save circuit python codes on the system with a custom name for future use.
 - Save Button - Save circuit python codes on the system for future use.
 - From Button - Upload `.txt` files which contain mnemonics to run.
 
-# Demo Video
-
-https://github.com/user-attachments/assets/dd3bd953-98c4-4e23-bbd3-6c9b38254989
+>[!TIP]
+>When file name input is used to save the Circuit Python code, the `Save` button save the file with that custom name.<br>
+>When simply click on `Save` button, it save the file as `code.py`.
 
 # OS Support
 - Windows 10
@@ -23,13 +24,8 @@ https://github.com/user-attachments/assets/dd3bd953-98c4-4e23-bbd3-6c9b38254989
 The mnemoics used in this tool is heavily inspired by <a href="https://github.com/hak5">Hak5</a> Ducky Script.<br>
 
 # Installation and Setup of Circuit Python
-1. Download Circuit Python `.uf2` file :
-   - Raspberry Pi Pico - [here](https://circuitpython.org/board/raspberry_pi_pico/)
-   - Raspberry Pi Pico W - [here](https://circuitpython.org/board/raspberry_pi_pico_w/)
-   - Raspberry Pi Zero W - [here](https://circuitpython.org/board/raspberrypi_zero_w/)
-   - Waveshare RP2040 Zero - [here](https://circuitpython.org/board/waveshare_rp2040_zero/)
-   - Latest version is **9.1.1** for all.
-   - For `Raspberry Pi Zero W`, download `.DISK.IMG.ZIP` file.
+1. Download latest Circuit Python `.uf2` file :
+   - Raspberry Pi Pico - [here](https://circuitpython.org/board/raspberry_pi_pico/).
 2. Connect Raspberry Pi Pico or Pico W with a USB cable.
 3. Press and hold the `BOOTSEL` button and connect to the PC/Laptop.
    - When it connects, then Raspberry Pi Pico or Pico W show as a removable storage device named `RPI-RP2`.
@@ -39,8 +35,7 @@ The mnemoics used in this tool is heavily inspired by <a href="https://github.co
    - Means circuit python is successfully flashed in the Raspberry Pi Pico or Pico W.
 5. Open `CIRCUITPY`.
    - There are two important things in it : `lib` folder and `code.py` file.
-6. Download Adafruit CircuitPython Bundle from [here](https://github.com/adafruit/Adafruit_CircuitPython_Bundle/releases)
-   - Latest is `adafruit-circuitpython-bundle-9.x-mpy-20240709.zip`.
+6. Download Adafruit CircuitPython Bundle from [here](https://github.com/adafruit/Adafruit_CircuitPython_Bundle/releases).
 7. Extarct the ZIP file.
 8. Go to the `lib` folder in the extracted ZIP file.
 9. Copy `adafruit_hid` folder in the `lib` folder of `CIRCUITPY`.
